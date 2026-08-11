@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button id="btn1">Click Me</button>
+        <button id="btn2">Click Me</button>
+        <button id="btn3">Click Me</button>
+    </div>
+        
+
+    <script>
+
+        // buttons is a node list. It looks and acts much like an array
+
+        const btn = document.getElementById('btn')
+        
+    //     btn.addEventListener("click", (e)=>{
+    //         // console.log(e.target)
+    //         e.target.style.background = "blue";
+    //         // e.target.setAttribute("style", "color: white; background-color: blue");
+    //          }
+    //          )
+
+    const buttons = document.querySelectorAll("button");
+
+    buttons.forEach((button)=>{
+        button.addEventListener("click", ()=>{
+            alert(button.id);
+        });
+    });
+
+
+    
+    </script>
+</body>
+</html>
